@@ -4,11 +4,12 @@
 #include <string>
 #include <vector>
 #include "Hyperlink.h"
+#include "IDirectionable.h"
 
 using std::string;
 using std::vector;
 
-class TopTenList
+class TopTenList : public IDirectionable
 {
   private:
     vector <Hyperlink> _list;
@@ -16,9 +17,12 @@ class TopTenList
   public:
     void set_at(int index, Hyperlink link);
     Hyperlink get(int index);
+    void display_forward();
+    void display_backward();
     string get_title();
     TopTenList();
     TopTenList(string name);
+
 };
 
 #endif
