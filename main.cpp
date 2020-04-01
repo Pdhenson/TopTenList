@@ -12,8 +12,10 @@ int main()
     Hyperlink cpp, python;
     
     Gallery* emoticons = new Gallery();
-    Hyperlink cpp;
 
+    cpp.text = "C++";
+    cpp.url = "https://www.cplusplus.com/";
+    languages->set_at(1, cpp);
     cpp.text = "Python";
     cpp.url = "https://www.python.org/";
     languages->set_at(2, cpp);

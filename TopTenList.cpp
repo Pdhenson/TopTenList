@@ -37,7 +37,7 @@ void TopTenList::display_forward()
 {
   for (int i = 0; i < _list.size(); i++)
   {
-    cout << _list[i].url;
+    cout << i+1 << ". "  << _list[i].url << std::endl;
   }
 }
 
@@ -45,7 +45,7 @@ void TopTenList::display_backward()
 {
   for (int i = _list.size() -1; i >= 0; i--)
   {
-    cout << _list[i].url;
+    cout << i+1 << ". "  << _list[i].url << std::endl;
   }
 }
 
